@@ -1,0 +1,22 @@
+.driver-card {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+.fio{
+    font-size: 30px;
+    font-weight: 600;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.column{
+    font-size: 20px;
+    margin-bottom: 5px;
+}

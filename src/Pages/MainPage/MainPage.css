@@ -1,0 +1,21 @@
+.img-fon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://static.tildacdn.com/tild3439-3535-4438-b561-663233353139/2truck-with-white-tr.jpg); /* Путь к картинке */
+    background-repeat: no-repeat; /* Фон не повторяется */
+    background-size: cover; /* Растягиваем  фон по высоте и ширине */
+    background-position: center; /* Позиция фона по центру */
+    height: 700px; /* Высота блока */
+    position: relative;
+  }
+  .info {
+    position: absolute;
+    bottom: 60px;
+    left: 40px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    color: #000;
+    font-size: 40px;
+  }

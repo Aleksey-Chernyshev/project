@@ -1,9 +1,8 @@
 import axios from "axios";
 
-
-export const createType = async (category: string, description: string,image: string) => {
+export const createCustomer = async (zakazchik: string, adress: string, phone: string, index: string, inn: string, rasch: string ) => {
     try {
-      const response = await axios.post(`http://localhost:3001/api/typeProduct`, { category, description,image });
+      const response = await axios.post(`http://localhost:3001/api/customer`, { zakazchik, adress, phone, index, inn, rasch });
       if (response.status === 200) {
         return response.data; 
       } else {
@@ -14,10 +13,9 @@ export const createType = async (category: string, description: string,image: st
       throw error;
     }
   };
-
-export const updateDesc = async (id: number,description: string) =>  {
+  export const updateCustomer = async (id: number,adress: string, phone: string) =>  {
     try {
-        const response = await axios.put(`http://localhost:3001/api/typeProduct`, {type_id: id,description})
+        const response = await axios.put(`http://localhost:3001/api/customer`, {id: id,adress, phone})
         console.log(response.data);
         console.log('data updated')
     } catch (error: any) {
@@ -25,9 +23,9 @@ export const updateDesc = async (id: number,description: string) =>  {
     }
   }
 
-export const deleteType = async(id:number) =>{
+export const deleteCustomer = async(id:number) =>{
     try {
-        const response = await axios.delete(`http://localhost:3001/api/typeProduct/${id}`)
+        const response = await axios.delete(`http://localhost:3001/api/customer/${id}`)
         console.log(response.data)
         console.log('delete type')
     } catch (error) {
